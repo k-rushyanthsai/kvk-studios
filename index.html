@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KVK Studios — Video Editing &amp; Visual Storytelling</title>
+  <meta name="description" content="KVK Studios turns raw footage into stories that connect. Reels, YouTube edits, cinematic films, promos and color grading." />
+  <meta name="theme-color" content="#171719" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- Small icon library used by buttons. Reuse with <svg><use href="#icon-name"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="icon-compare" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#portfolio">Skip to portfolio</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#home" aria-label="KVK Studios — home">
+        <span class="logo__mark">KVK<span class="logo__dot">.</span></span>
+        <span class="logo__sub">STUDIOS</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main">
+        <a class="nav__link" href="#home">Home</a>
+        <a class="nav__link" href="#portfolio">Portfolio</a>
+        <a class="nav__link" href="#services">Services</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#contact">Contact</a>
+        <a class="btn btn--primary nav__cta-mobile" href="#contact">Let's Talk <svg class="icon"><use href="#icon-arrow-up-right"/></svg></a>
+      </nav>
+
+      <a class="btn btn--primary site-header__cta" href="#contact">Let's Talk <svg class="icon"><use href="#icon-arrow-up-right"/></svg></a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO (dark + graded photo) ================= -->
+    <section class="hero" id="home">
+      <!-- Put your hero photo at assets/hero.jpg. Until then you'll see a gradient. -->
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__tint" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <p class="label label--orange">KVK Studios · Video Editing &amp; Visual Storytelling</p>
+        <h1 class="hero__title">
+          Stories That Deserve to Be <span class="hero__seen">seen.</span>
+        </h1>
+        <p class="hero__lead">
+          Thoughtful edits. Powerful visuals. I turn raw footage into stories that connect, captivate, and stay with you.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#portfolio">Explore My Work <svg class="icon"><use href="#icon-arrow-up-right"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="#contact">Let's Talk <svg class="icon"><use href="#icon-arrow-right"/></svg></a>
+        </div>
+        <p class="hero__tagline">Every frame. Every cut. Every feeling.</p>
+      </div>
+
+      <!-- Decorative editing timeline: the brand motif -->
+      <div class="timeline" aria-hidden="true">
+        <div class="timeline__tracks">
+          <div class="timeline__row">
+            <span class="clip clip--red"    style="flex:3"></span>
+            <span class="clip clip--orange" style="flex:5"></span>
+            <span class="clip clip--amber"  style="flex:2"></span>
+            <span class="clip clip--burgundy" style="flex:4"></span>
+            <span class="clip clip--red"    style="flex:2"></span>
+            <span class="clip clip--stone"  style="flex:3"></span>
+            <span class="clip clip--orange" style="flex:4"></span>
+            <span class="clip clip--amber"  style="flex:3"></span>
+          </div>
+          <div class="timeline__row timeline__row--thin">
+            <span class="clip clip--amber"  style="flex:6"></span>
+            <span class="clip clip--burgundy" style="flex:3"></span>
+            <span class="clip clip--orange" style="flex:5"></span>
+            <span class="clip clip--red"    style="flex:4"></span>
+            <span class="clip clip--stone"  style="flex:2"></span>
+          </div>
+        </div>
+        <div class="timeline__scrub"><span class="timeline__playhead"></span></div>
+      </div>
+    </section>
+
+    <!-- Formats strip: warm gradient divider -->
+    <div class="format-strip" aria-label="What I edit">
+      <ul class="format-strip__list">
+        <li>Reels &amp; Shorts</li>
+        <li>YouTube</li>
+        <li>Cinematic edits</li>
+        <li>Promo videos</li>
+        <li>Color grading</li>
+      </ul>
+    </div>
+
+    <!-- ================= PORTFOLIO (stone grey) ================= -->
+    <section class="section section--stone" id="portfolio">
+      <div class="container">
+        <header class="section__head">
+          <p class="label label--red">The Portfolio</p>
+          <h2 class="section__title">Selected Work<span class="dot">.</span></h2>
+          <p class="section__intro">Different formats. One focus: a story well told.</p>
+        </header>
+
+        <div class="filters" id="filter-bar" role="group" aria-label="Filter projects"></div>
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+
+        <div class="project-grid" id="project-grid"></div>
+        <p class="empty-state" id="empty-state" hidden>No projects in this category yet. Pick another filter.</p>
+
+        <div class="section__foot">
+          <!-- TODO: replace with your YouTube / Instagram link -->
+          <a class="btn btn--dark" href="https://www.instagram.com/kvkstudios_/" target="_blank" rel="noopener">View all work <svg class="icon"><use href="#icon-arrow-up-right"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES (dark with stone grey cards) ================= -->
+    <section class="section section--dark" id="services">
+      <div class="container">
+        <header class="section__head">
+          <p class="label label--amber">Services</p>
+          <h2 class="section__title">Everything between<br />raw footage and release<span class="dot">.</span></h2>
+        </header>
+        <div class="service-grid" id="service-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT (stone grey + red panel) ================= -->
+    <section class="section section--stone" id="about">
+      <div class="container">
+        <div class="about">
+          <div class="about__photo">
+            <span class="about__placeholder">Add your photo<br /><small>assets/about.jpg</small></span>
+            <img src="./assets/kvk.jpeg" alt="The editor behind KVK Studios at work" onerror="this.hidden=true" />
+          </div>
+
+          <div class="about__text">
+            <p class="label label--charcoal">About</p>
+            <h2 class="about__title">I cut for feeling first, then for rhythm.</h2>
+            <p>
+              Hello I am K.Rushyanthsai Co-founder of KVK Studios.
+    KVK Studios is a video editing studio,
+    <span class="experience-highlight">experience of 2 years</span>.
+    We focus on <span class="experience-highlight">emotions and stories</span> that hold attention.
+    Every project starts with one question: what should the viewer feel?
+    Then the edit, sound and color are built to deliver exactly that.
+            </p>
+            <ul class="about__values">
+              <li>Story first</li>
+              <li>Sound-aware cuts</li>
+              <li>Color that fits the mood</li>
+            </ul>
+            <a class="btn btn--dark" href="#contact">Work with me <svg class="icon"><use href="#icon-arrow-right"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COLOR GRADING (burgundy) ================= -->
+    <section class="section section--burgundy" id="grading">
+      <div class="container grading">
+        <header class="grading__intro">
+          <p class="label label--amber">Color Grading</p>
+          <h2 class="section__title">Same footage.<br />Different feeling<span class="dot">.</span></h2>
+          <p class="section__intro">Drag the handle to compare the flat, ungraded shot with the final grade.</p>
+          <ul class="grading__points">
+            <li>Balanced exposure</li>
+            <li>Shaped contrast</li>
+            <li>Consistent skin tones</li>
+          </ul>
+        </header>
+
+        <!-- Before/after photos live in assets/grading/. Swap the two files to change the comparison. -->
+        <div class="compare" id="compare" style="--pos: 50%">
+          <div class="compare__layer"><img class="compare__img" src="assets/grading/after.jpg" alt="Festival flower tower after color grading: richer, warmer color" draggable="false" /></div>
+          <div class="compare__layer compare__layer--before"><img class="compare__img" src="assets/grading/before.jpg" alt="Festival flower tower before color grading: flatter, greener color" draggable="false" /></div>
+          <span class="compare__tag compare__tag--before">Before</span>
+          <span class="compare__tag compare__tag--after">After</span>
+          <span class="compare__handle" aria-hidden="true"><svg class="icon"><use href="#icon-compare"/></svg></span>
+          <input class="compare__range" id="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare before and after color grade" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT (red → orange → amber) ================= -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact">
+        <p class="label label--charcoal">Contact</p>
+        <h2 class="contact__title">Bring the footage.<br />We'll find the story.</h2>
+        <p class="contact__lead">Tell me about your project, your deadline and where it will be seen.</p>
+        <div class="contact__actions">
+          <!-- TODO: replace these three links with your real details -->
+          <a class="btn btn--dark btn--lg" href="mailto:kvkstudios1980@gmail.com">Email me <svg class="icon"><use href="#icon-arrow-up-right"/></svg></a>
+          
+          <a class="btn btn--light btn--lg" href="https://www.instagram.com/kvkstudios_/" target="_blank" rel="noopener">Instagram <svg class="icon"><use href="#icon-arrow-up-right"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="logo" href="#home" aria-label="KVK Studios — back to top">
+        <span class="logo__mark">KVK<span class="logo__dot">.</span></span>
+        <span class="logo__sub">STUDIOS</span>
+      </a>
+      <p class="site-footer__copy">© <span id="year"></span> KVK Studios. Every frame. Every cut. Every feeling.</p>
+      <span class="site-footer__bar" aria-hidden="true"></span>
+    </div>
+  </footer>
+
+  <!-- ================= VIDEO MODAL ================= -->
+  <dialog class="modal" id="video-modal" aria-label="Video player">
+    <button class="modal__close" id="modal-close" aria-label="Close video"><svg class="icon"><use href="#icon-close"/></svg></button>
+    <div class="modal__frame" id="modal-frame"></div>
+    <p class="modal__title" id="modal-title"></p>
+  </dialog>
+
+  <!-- Scripts: data first, then the code that uses it -->
+  <script src="./js/projects-data.js"></script>
+  <script src="./js/services-data.js"></script>
+  <script src="./js/portfolio.js"></script>
+  <script src="./js/services.js"></script>
+  <script src="./js/compare-slider.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
